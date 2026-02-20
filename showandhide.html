@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<p>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">
+
+    </p>
+
+     <!--in this we will be using DOM + event listener to show and hide the text when we click on the button-->
+    <button onclick="Toggletext()"> Show and hide </button>
+    <script>
+        function Toggletext(){
+            let t=document.getElementById("text");
+            //style.display is used to show and hide the text
+            if(t.style.display=="none"){// if the text is hidden then show it
+                t.style.display="block";//block is used to show the text
+                }
+                else{
+                    t.style.display="none";//none is used to hide the text
+                }
+        }
+    </script>
+
+</body>
+</html>

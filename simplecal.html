@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n1" type="number" >
+    <input id="n2" type="number" >
+    <button onclick="add()">add</button>
+    <p id="result"></p>
+    <script>
+        function add(){
+            let a=Number(document.getElementById("n1").value);//value is used to get the value of the input field
+            let b=Number(document.getElementById("n2").value);//Number is used to convert the string value to number
+            document.getElementById("result").innerHTML=a+b;//innerHTML is used to display the result in the paragraph
+        }
+    </script>
+</body>
+</html>
